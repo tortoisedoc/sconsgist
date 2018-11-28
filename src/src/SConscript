@@ -1,6 +1,11 @@
 libs= [
-  'b',
-  'c'
+  'c',
+  'd'
 ]
 
-Program('a', ['a.cpp'], LIBS=libs)
+libPaths=[
+  '../b/c/d/src/',
+  '../b/c/src'
+]
+
+Program('a', ['a.cpp'], LIBS=libs, LIBPATH=libPaths)
