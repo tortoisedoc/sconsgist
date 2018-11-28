@@ -1,0 +1,6 @@
+libs= [
+  'b',
+  'c'
+]
+
+Program('a', ['a.cpp'], LIBS=libs)
